@@ -11,6 +11,7 @@ public class FizzBuzz {
         result = index % 5 == 0 ? BUZZ : result;
         result = index % 7 == 0 ? WHIZZ : result;
         result = index % (3 * 5) == 0 ? FIZZ + BUZZ : result;
+        result = index % (3 * 7) == 0 ? FIZZ + WHIZZ : result;
 
         return result;
     }
