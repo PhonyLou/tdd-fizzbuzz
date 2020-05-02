@@ -2,6 +2,7 @@ package cn.xpbootcamp.fizzbuzz;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import static cn.xpbootcamp.fizzbuzz.Constant.*;
 
 public class FizzBuzzSpec {
@@ -81,6 +82,15 @@ public class FizzBuzzSpec {
     void return_BuzzWhizz_when_index_is_multiple_of_5x7() {
         int givenIndex = 35;
         String expect = BUZZ + WHIZZ;
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
+
+    @Test
+    void return_FizzBuzzWhizz_when_index_is_multiple_of_3x5x7() {
+        int givenIndex = 3 * 5 * 7;
+        String expect = FIZZ + BUZZ + WHIZZ;
         String actual = FizzBuzz.doFizzBuzz(givenIndex);
 
         Assertions.assertEquals(expect, actual);
