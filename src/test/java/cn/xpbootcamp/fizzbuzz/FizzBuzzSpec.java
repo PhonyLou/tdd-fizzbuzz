@@ -58,4 +58,13 @@ public class FizzBuzzSpec {
 
         Assertions.assertEquals(expect, actual);
     }
+
+    @Test
+    void return_FizzBuzz_when_index_is_multiple_of_3x5() {
+        int givenIndex = 15;
+        String expect = FIZZ + BUZZ;
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
 }

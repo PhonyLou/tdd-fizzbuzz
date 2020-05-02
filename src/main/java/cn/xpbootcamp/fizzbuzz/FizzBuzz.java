@@ -10,6 +10,7 @@ public class FizzBuzz {
         result = index % 3 == 0 ? FIZZ : result;
         result = index % 5 == 0 ? BUZZ : result;
         result = index % 7 == 0 ? WHIZZ : result;
+        result = index % (3 * 5) == 0 ? FIZZ + BUZZ : result;
 
         return result;
     }
