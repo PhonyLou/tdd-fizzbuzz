@@ -1,7 +1,6 @@
 package cn.xpbootcamp.fizzbuzz;
 
-import static cn.xpbootcamp.fizzbuzz.Constant.BUZZ;
-import static cn.xpbootcamp.fizzbuzz.Constant.FIZZ;
+import static cn.xpbootcamp.fizzbuzz.Constant.*;
 
 public class FizzBuzz {
 
@@ -10,7 +9,8 @@ public class FizzBuzz {
 
         result = index % 3 == 0 ? FIZZ : result;
         result = index % 5 == 0 ? BUZZ : result;
-        
+        result = index % 7 == 0 ? WHIZZ : result;
+
         return result;
     }
 }
