@@ -22,4 +22,22 @@ public class FizzBuzzSpec {
 
         Assertions.assertEquals(expect, actual);
     }
+
+    @Test
+    void return_Fizz_when_index_is_5() {
+        int givenIndex = 5;
+        String expect = BUZZ;
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
+
+    @Test
+    void return_Fizz_when_index_is_multiple_of_5() {
+        int givenIndex = 10;
+        String expect = BUZZ;
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
 }
