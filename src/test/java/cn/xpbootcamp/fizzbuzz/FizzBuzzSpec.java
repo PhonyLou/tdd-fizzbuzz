@@ -24,7 +24,7 @@ public class FizzBuzzSpec {
     }
 
     @Test
-    void return_Fizz_when_index_is_5() {
+    void return_Buzz_when_index_is_5() {
         int givenIndex = 5;
         String expect = BUZZ;
         String actual = FizzBuzz.doFizzBuzz(givenIndex);
@@ -33,7 +33,7 @@ public class FizzBuzzSpec {
     }
 
     @Test
-    void return_Fizz_when_index_is_multiple_of_5() {
+    void return_Buzz_when_index_is_multiple_of_5() {
         int givenIndex = 10;
         String expect = BUZZ;
         String actual = FizzBuzz.doFizzBuzz(givenIndex);
