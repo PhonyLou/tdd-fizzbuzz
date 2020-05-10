@@ -70,9 +70,9 @@ public class FizzBuzzSpec {
     }
 
     @Test
-    void should_return_FizzBuzz_when_reporting_given_index_is_multiple_of_3x5() {
+    void should_return_Buzz_when_reporting_given_index_is_multiple_of_3_and_contains_5() {
         int givenIndex = 15;
-        String expect = FIZZ + BUZZ;
+        String expect = BUZZ;
         String actual = FizzBuzz.doFizzBuzz(givenIndex);
 
         Assertions.assertEquals(expect, actual);
@@ -97,9 +97,9 @@ public class FizzBuzzSpec {
     }
 
     @Test
-    void should_return_FizzBuzzWhizz_when_reporting_given_index_is_multiple_of_3x5x7() {
-        int givenIndex = 3 * 5 * 7;
-        String expect = FIZZ + BUZZ + WHIZZ;
+    void should_return_BuzzWhizz_when_reporting_given_index_contains_5() {
+        int givenIndex = 105;
+        String expect = BUZZ + WHIZZ;
         String actual = FizzBuzz.doFizzBuzz(givenIndex);
 
         Assertions.assertEquals(expect, actual);

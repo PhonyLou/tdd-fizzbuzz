@@ -13,8 +13,15 @@ public class FizzBuzz {
         boolean isContains5 = input.contains("5");
         boolean isContains7 = input.contains("7");
 
-        if (isContains7) isMultipleOf5 = false;
+        if (isContains7) {
+            isMultipleOf5 = false;
+            isContains5 = false;
+        }
 
+        if(isContains5) {
+            isMultipleOf3 = false;
+            isContains3 = false;
+        }
 
         String result = "";
         if (isMultipleOf3) result += FIZZ;
