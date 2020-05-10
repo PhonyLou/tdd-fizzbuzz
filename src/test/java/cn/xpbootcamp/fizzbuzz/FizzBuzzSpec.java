@@ -104,4 +104,13 @@ public class FizzBuzzSpec {
 
         Assertions.assertEquals(expect, actual);
     }
+
+    @Test
+    void should_return_FizzWhizz_when_reporting_given_index_is_147() {
+        int givenIndex = 147;
+        String expect = FIZZ + WHIZZ;
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
 }
