@@ -19,25 +19,9 @@ public class FizzBuzz {
         }
 
         String result = "";
-
-        if (isMultipleOf3)
-            result += FIZZ;
-
-        if (isMultipleOf5)
-            result += BUZZ;
-
-        if (isMultipleOf7)
-            result += WHIZZ;
-
-//        result = index % 3 == 0 ? FIZZ : result;
-//        result = index % 5 == 0 ? BUZZ : result;
-//        result = index % 7 == 0 ? WHIZZ : result;
-//        result = index % (3 * 5) == 0 ? FIZZ + BUZZ : result;
-//        result = index % (3 * 7) == 0 ? FIZZ + WHIZZ : result;
-//        result = index % (5 * 7) == 0 ? BUZZ + WHIZZ : result;
-//        result = index % (3 * 5 * 7) == 0 ? FIZZ + BUZZ + WHIZZ : result;
-
-
+        if (isMultipleOf3) result += FIZZ;
+        if (isMultipleOf5) result += BUZZ;
+        if (isMultipleOf7) result += WHIZZ;
 
 //        contains 3 => Fizz // rule 4 + rule 5
 //
