@@ -106,7 +106,7 @@ public class FizzBuzzSpec {
     }
 
     @Test
-    void should_return_FizzWhizz_when_reporting_given_index_is_147() {
+    void should_return_FizzWhizz_when_reporting_given_index_contains_7_and_multiple_of_3_and_7() {
         int givenIndex = 147;
         String expect = FIZZ + WHIZZ;
         String actual = FizzBuzz.doFizzBuzz(givenIndex);
