@@ -7,6 +7,15 @@ import static cn.xpbootcamp.fizzbuzz.Constant.*;
 
 public class FizzBuzzSpec {
     @Test
+    void should_return_number_when_reporting_given_index_is_2() {
+        int givenIndex = 2;
+        String expect = "2";
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
+
+    @Test
     void return_Fizz_when_index_is_3() {
         int givenIndex = 3;
         String expect = FIZZ;
