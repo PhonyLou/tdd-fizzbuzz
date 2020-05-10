@@ -13,9 +13,8 @@ public class FizzBuzz {
         boolean isContains5 = input.contains("5");
         boolean isContains7 = input.contains("7");
 
-        boolean passRule7 = input.contains("7") && index % 3 == 0;
-        if (passRule7) {
-            return FIZZ;
+        if (isContains7) {
+            isMultipleOf5 = false;
         }
 
         String result = "";
@@ -30,11 +29,6 @@ public class FizzBuzz {
 //        multiple of 7 => Whizz
 //        multiple of 7 * 5 => Buzz + Whizz
 //        // rule 6
-//
-//        contains 7 =>
-//        multiple of 3 => Fizz
-//        multiple of 3 * 7 => Fizz + Whizz
-// rule 7
 
         return result.equals("") ? input : result;
     }
