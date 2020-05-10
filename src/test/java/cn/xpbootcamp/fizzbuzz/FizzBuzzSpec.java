@@ -122,4 +122,22 @@ public class FizzBuzzSpec {
 
         Assertions.assertEquals(expect, actual);
     }
+
+    @Test
+    void should_return_Fizz_when_reporting_given_index_contains_3() {
+        int givenIndex = 13;
+        String expect = FIZZ;
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
+
+    @Test
+    void should_return_Fizz_when_reporting_given_index_contains_3_7_and_multiple_of_3_7() {
+        int givenIndex = 3087;
+        String expect = FIZZ + WHIZZ;
+        String actual = FizzBuzz.doFizzBuzz(givenIndex);
+
+        Assertions.assertEquals(expect, actual);
+    }
 }

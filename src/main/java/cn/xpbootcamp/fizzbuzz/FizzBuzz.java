@@ -16,11 +16,17 @@ public class FizzBuzz {
         if (isContains7) {
             isMultipleOf5 = false;
             isContains5 = false;
+
+            isContains3 = false;
         }
 
-        if(isContains5) {
+        if (isContains5) {
             isMultipleOf3 = false;
             isContains3 = false;
+        }
+
+        if (isContains3) {
+            return FIZZ;
         }
 
         String result = "";
