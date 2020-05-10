@@ -4,21 +4,38 @@ import static cn.xpbootcamp.fizzbuzz.Constant.*;
 
 public class FizzBuzz {
     static String doFizzBuzz(int index) {
+        boolean isMultipleOf3 = index % 3 == 0;
+        boolean isMultipleOf5 = index % 5 == 0;
+        boolean isMultipleOf7 = index % 7 == 0;
 
-        String result = String.valueOf(index);
+        String input = String.valueOf(index);
+        boolean isContains3 = input.contains("3");
+        boolean isContains5 = input.contains("5");
+        boolean isContains7 = input.contains("7");
 
-        boolean passRule7 = result.contains("7") && index % 3 == 0;
+        boolean passRule7 = input.contains("7") && index % 3 == 0;
         if (passRule7) {
-            return FIZZ + WHIZZ;
+            return FIZZ;
         }
 
-        result = index % 3 == 0 ? FIZZ : result;
-        result = index % 5 == 0 ? BUZZ : result;
-        result = index % 7 == 0 ? WHIZZ : result;
-        result = index % (3 * 5) == 0 ? FIZZ + BUZZ : result;
-        result = index % (3 * 7) == 0 ? FIZZ + WHIZZ : result;
-        result = index % (5 * 7) == 0 ? BUZZ + WHIZZ : result;
-        result = index % (3 * 5 * 7) == 0 ? FIZZ + BUZZ + WHIZZ : result;
+        String result = "";
+
+        if (isMultipleOf3)
+            result += FIZZ;
+
+        if (isMultipleOf5)
+            result += BUZZ;
+
+        if (isMultipleOf7)
+            result += WHIZZ;
+
+//        result = index % 3 == 0 ? FIZZ : result;
+//        result = index % 5 == 0 ? BUZZ : result;
+//        result = index % 7 == 0 ? WHIZZ : result;
+//        result = index % (3 * 5) == 0 ? FIZZ + BUZZ : result;
+//        result = index % (3 * 7) == 0 ? FIZZ + WHIZZ : result;
+//        result = index % (5 * 7) == 0 ? BUZZ + WHIZZ : result;
+//        result = index % (3 * 5 * 7) == 0 ? FIZZ + BUZZ + WHIZZ : result;
 
 
 
@@ -35,6 +52,6 @@ public class FizzBuzz {
 //        multiple of 3 * 7 => Fizz + Whizz
 // rule 7
 
-        return result;
+        return result.equals("") ? input : result;
     }
 }
